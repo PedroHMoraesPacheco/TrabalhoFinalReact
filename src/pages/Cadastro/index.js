@@ -7,16 +7,15 @@ import cadastroService from '../../services/cadastro'
 export function Cadastro() {
   let navigate = useNavigate();
 
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
-  const [username, setUsername] = useState();
-  const [nome, setNome] = useState();
-  const [cpf, setCpf] = useState();
-  const [telefone, setTelefone] = useState();
-  const [data, setData] = useState();
+  const [email, setEmail] = useState('phmp@gmail.com');
+  const [password, setPassword] = useState('12345');
+  const [username, setUsername] = useState('pedro');
+  const [nome, setNome] = useState('Pedro');
+  const [cpf, setCpf] = useState('12345678901');
+  const [telefone, setTelefone] = useState('1234432');
 
   function handleCadastro() {
-    cadastroService.Cadastro(nome,email,username, password,cpf,telefone,data).then(res => {
+    cadastroService.Cadastro(nome, email, username, password, cpf, telefone).then(res => {
       console.log(res);
       toast.success('Cadastro Efetuado')
       navigate("/")
@@ -36,7 +35,6 @@ export function Cadastro() {
         <input style={{ marginBottom: 20, padding: 15 }} placeholder='Username' required type={'username'} value={username} onChange={e => setUsername(e.target.value)} />
         <input style={{ marginBottom: 20, padding: 15 }} placeholder='Nome' required type={'nome'} value={nome} onChange={e => setNome(e.target.value)} />
         <input style={{ marginBottom: 20, padding: 15 }} placeholder='Cpf' required type={'cpf'} value={cpf} onChange={e => setCpf(e.target.value)} />
-        <input style={{ marginBottom: 20, padding: 15 }} placeholder='Data de nascimento' required type={'data'} value={data} onChange={e => setData(e.target.value)} />
         <input style={{ marginBottom: 20, padding: 15 }} placeholder='Telefone' required type={'telefone'} value={telefone} onChange={e => setTelefone(e.target.value)} />
         <button style={{ marginBottom: 20, padding: 15 }} onClick={handleCadastro}>
           Cadastrar-se

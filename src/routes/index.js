@@ -3,15 +3,15 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import { Login } from '../pages/Login'
 import { Home } from '../pages/Home'
-import {Cadastro} from "../pages/Cadastro";
+import { Cadastro } from "../pages/Cadastro";
 
-export function AppRoutes(){
+export function AppRoutes() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Login />}/>
-                <Route path="/home" element={<Home />}/>
-                <Route path="/cadastro" element={<Cadastro></Cadastro>}/>
+                <Route path="/" element={<Login />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/cadastro" element={<Cadastro />} />
             </Routes>
         </BrowserRouter>
     )

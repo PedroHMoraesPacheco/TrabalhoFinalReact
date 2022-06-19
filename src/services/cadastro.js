@@ -1,15 +1,13 @@
 import { api } from './http'
 
-const Cadastro = (nome, email, username, password, cpf, telefone, data) => {
+const Cadastro = (nome, email, username, password, cpf, telefone) => {
     return api.post(`cliente/cadastro`, {
-        email: email,
-        senha: password,
         nome: nome,
+        email: email,
         username: username,
-        cpf: cpf,
+        senha: password,
         telefone: telefone,
-        data: data,
-        role: "cliente"
+        cpf: cpf
     })
 }
 

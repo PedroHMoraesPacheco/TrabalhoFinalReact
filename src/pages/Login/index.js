@@ -3,13 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify'
 
 import authService from '../../services/auth'
-import { Container } from './style';
+import { Container } from './styles';
 
 export function Login() {
   let navigate = useNavigate();
 
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
+  const [email, setEmail] = useState('pedro@gmail.com');
+  const [password, setPassword] = useState('123456');
 
   function handleLogin() {
     authService.Login(email, password).then(res => {
@@ -23,10 +23,6 @@ export function Login() {
     })
   }
 
-<Container>
-
-</Container>
-
   return (
     <div style={{ display: 'flex', height: '100vh', backgroundColor: '#FFF', alignItems: 'center', justifyContent: 'center' }}>
       <div style={{ display: 'flex', backgroundColor: '#FF4040', width: 500, padding: 50, flexDirection: 'column', justifyContent: 'center' }}>
@@ -36,6 +32,10 @@ export function Login() {
         <button style={{ marginBottom: 20, padding: 15 }} onClick={handleLogin}>
           Entrar
         </button>
+        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+          <p style={{ color: '#FFF', cursor: 'pointer' }} >Alterar senha</p>
+          <p style={{ color: '#FFF', cursor: 'pointer' }} >Cadastre-se</p>
+        </div>
       </div>
     </div>
   )
