@@ -2,13 +2,13 @@ import React, { useState } from 'react';
  import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify'
 import authService from '../../services/auth'
-import { Container } from './style';
+import { Container } from './styles';
 
 export function Login() {
   let navigate = useNavigate();
 
-  const [email, setEmail] = useState('phmp512003@gmail.com');
-  const [password, setPassword] = useState('12345678');
+  const [email, setEmail] = useState('pedro@gmail.com');
+  const [password, setPassword] = useState('123456');
 
   function handleLogin() {
     authService.Login(email, password).then(res => {
@@ -20,23 +20,7 @@ export function Login() {
       toast.error('nao logou')
       console.log(err);
     })
-
-    // try {
-    //   const response = await authService.Login(email, password);
-    //   if (response) {
-    //     toast.success('logou')
-    //     localStorage.setItem('token', response.headers.token)
-    //     console.log(response);
-    //   }
-    // } catch (error) {
-    //   toast.error('nao logou')
-
-    // }
   }
-
-<Container>
-
-</Container>
 
   return (
     <div style={{ display: 'flex', height: '100vh', backgroundColor: '#FFF', alignItems: 'center', justifyContent: 'center' }}>
@@ -47,6 +31,10 @@ export function Login() {
         <button style={{ marginBottom: 20, padding: 15 }} onClick={handleLogin}>
           Entrar
         </button>
+        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+          <p style={{ color: '#FFF', cursor: 'pointer' }} >Alterar senha</p>
+          <p style={{ color: '#FFF', cursor: 'pointer' }} >Cadastre-se</p>
+        </div>
       </div>
     </div>
   )
