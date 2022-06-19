@@ -12,19 +12,21 @@
 
 .social_list li {
     margin: 0 1 em;
+    padding: 0.5em;
 }
+    
 
 .social_list li:hover {
     color: #ffbb33;
 }
 
 .social_list_svg {
-    font-size: 1.5em;
+    font-size: 1.5 em;
     cursor: pointer;
 }
 
 .copy_right{
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .copy_right_span {
