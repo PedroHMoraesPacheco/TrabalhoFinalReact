@@ -8,8 +8,8 @@ import { Container } from './style';
 export function Login() {
   let navigate = useNavigate();
 
-  const [email, setEmail] = useState('phmp512003@gmail.com');
-  const [password, setPassword] = useState('12345678');
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
 
   function handleLogin() {
     authService.Login(email, password).then(res => {
@@ -21,18 +21,6 @@ export function Login() {
       toast.error('nao logou')
       console.log(err);
     })
-
-    // try {
-    //   const response = await authService.Login(email, password);
-    //   if (response) {
-    //     toast.success('logou')
-    //     localStorage.setItem('token', response.headers.token)
-    //     console.log(response);
-    //   }
-    // } catch (error) {
-    //   toast.error('nao logou')
-
-    // }
   }
 
 <Container>
