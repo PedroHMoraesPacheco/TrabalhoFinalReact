@@ -1,11 +1,17 @@
-import React from 'react';
+import React from 'react'
+import eco from './img.png'
+import styles from './styles.css'
 
-// import { Container } from './styles';
-
-export function Home() {
+export function Home() { 
   return (
-    <div>
-        <p>Home</p>
-    </div>
+   <section className={styles.home_container}>
+        <h1 >Bem-Vindo a <span>Ecommerch</span>
+        </h1>
+        <h2>Qualidade de Produtos é aqui!</h2> 
+        <img src={eco} alt="img"/>
+    </section>
+
   )
 }
+
+
