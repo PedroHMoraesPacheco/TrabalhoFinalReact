@@ -1,0 +1,11 @@
+.btn{
+    background-color: black;
+    color: blueviolet;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 3%;
+}
+.btn:hover{
+    color: rgb(198, 138, 255);
+}
