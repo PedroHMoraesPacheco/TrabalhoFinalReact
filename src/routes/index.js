@@ -7,6 +7,8 @@ import { Cadastro } from "../pages/Cadastro";
 import { Categoria } from '../pages/Categoria'
 import Footer from "../components/Footer/footer";
 import { Header } from "../components/Header";
+import { Produtos } from "../pages/Produtos";
+
 
 
 export function AppRoutes() {
@@ -18,6 +20,7 @@ export function AppRoutes() {
                 <Route path="/home" element={<Home />} />
                 <Route path="/cadastro" element={<Cadastro />} />
                 <Route path="/categoria" element={<Categoria/>}/>
+                <Route path="/produto" element={<Produtos />} />
             </Routes>
             <Footer />
         </BrowserRouter>
