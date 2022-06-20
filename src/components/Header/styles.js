@@ -7,7 +7,7 @@ export const Container = styled.div`
 
     .header {
         display: flex;
-        alingn-items: center
+        align-content: center;
     
     .logo{
         width: 300px;
