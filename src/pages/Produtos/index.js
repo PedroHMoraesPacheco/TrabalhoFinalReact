@@ -16,6 +16,7 @@ export function Produtos() {
   const [file, setFile] = useState();
 
 
+
   //function handleCadastro() {
 
   //   produtoService.Create(nome, descricao, preco, quantidade_estoque,categoria,file).then(res => {
