@@ -14,10 +14,9 @@
     margin: 0 1em;
     padding: 0.5em;
 }
-    
 
 .social_list li:hover {
-    color: #ffbb33;
+    color: rgb(176, 92, 255);
 }
 
 .social_list_svg {

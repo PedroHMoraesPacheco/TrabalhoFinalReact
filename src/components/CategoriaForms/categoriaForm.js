@@ -1,22 +1,33 @@
-import styles from './categoriaFormStyle.css'
+import  './categoriaFormStyle.css'
+import Input from '../Form/input'
 
-function CategoriaForm() {
+export default function CategoriaForm () {
+
     return (
-        <form className= {styles.form}>
+        <>
+        <form className= 'form'>
+            <Input 
+                type="text"
+                text="Nome da Categoria" 
+                name="name" 
+                placeholder="Insira o nome da categoria"
+            />
+
+            <Input 
+                type="text"
+                text="Descrição da Categoria" 
+                name="name" 
+                placeholder="Insira a descrição da categoria"
+            />
+            
             <div>
-                <input type= "text" placeholder="Insira o nome da Categoria"/>
-            </div>
-            <div>
-                <input type= "text" placeholder="Insira a descrição da Categoria"/>
-            </div>
-            <div>
-                <input type="submit" value="Criar projeto"/>
+                <input type="submit" value="Cadastrar"/>
             </div>
         </form>
 
+        </>
+        
 
     )
 
 }
-
-export default CategoriaForm
