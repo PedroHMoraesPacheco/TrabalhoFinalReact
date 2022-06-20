@@ -11,7 +11,7 @@ export function Home() {
         <h1 >Bem-Vindo a <span>Ecommerch</span></h1>
         <p>Qualidade de Produtos é aqui!</p> 
         <Button to={'/produto'} text='Confira nossos Produtos'/>
-        <ProfileCard/>
+        <ProfileCard to={'/home'} />
         <img src={eco} alt="img"/>
     </section>
 

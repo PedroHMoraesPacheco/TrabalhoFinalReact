@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "../Button";
+import './styles.css';
 
-export const ProfileCard=()=>{
+export const ProfileCard=({to, text})=>{
     const{useState}=React;
     const[addbag,setaddbag]=useState(1);
     
@@ -10,10 +10,8 @@ export const ProfileCard=()=>{
      const DecBag=()=>{
         if(addbag>=1){
         setaddbag(addbag-1);
-    
         }
     };
-
     return(
         <>
             <div className="container">
@@ -26,9 +24,9 @@ export const ProfileCard=()=>{
                             <span></span>
                         </div>
                     </div>
-                    {/* <div className="image"> */}
-                        {/* <img src="https://images-na.ssl-images-amazon.com/images/I/61NtVBMOmLL._AC_SL1010_.jpg" alt="img" /> */}
-                    {/* </div> */}
+                    <div className="image">
+                        <img src="https://imgur.com/VcypK5c.png" alt="img" /> 
+                    </div> 
                     <div className="vitamin">
                         <h3>True Skin Vitamin C</h3>
                     </div>
@@ -37,8 +35,8 @@ export const ProfileCard=()=>{
                         <h5>Size : 1 FL Oz</h5>
                     </div>
                     <div className="buttons">
-                        <Button>1 FL Oz<p>1 option from $23</p></Button>
-                        <Button>2 FL Oz<p>$43($21/FL Oz)</p></Button>
+                        <button >1 FL Oz<p>1 option from $23</p></button>
+                        <button >2 FL Oz<p>$43($21/FL Oz)</p></button>
                     </div>
                     <h4>Select Gender</h4>
                     <div className="gender">
@@ -54,7 +52,7 @@ export const ProfileCard=()=>{
                         </div>
                         <div className="money_bag">
                             <h3>$23</h3>
-                            <Button onClick={AddBag}><i className="fa fa-shopping-bag"></i>Adicionar ao Carrinho</Button>
+                            <button onClick={AddBag}><i className="fa fa-shopping-bag"></i>Adicionar ao Carrinho</button>
                         </div>
     
                     </div>
