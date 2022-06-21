@@ -16,11 +16,14 @@ export function Vitrine(){
     },[])
    
     return(
+    
         <div className="cards">
         {products.map(product=>(
       <Card product={product}/>
+      
      ))}
         </div>
+        
         
     )
 }

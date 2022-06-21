@@ -49,7 +49,8 @@ export const Card=({product})=>{
                     </div>
                 </div>
             </div>
-            </div>      
+            </div>     
+      
         </>
         );
 }
