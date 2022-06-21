@@ -16,29 +16,16 @@ export const ProfileCard=({to, text})=>{
         <>
             <div className="container">
                 <div className="card">
-                    <div className="top_part">
-                        <div className="circle">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
                     <div className="image">
-                        <img src="https://imgur.com/VcypK5c.png" alt="img" /> 
+                        <img src="https://imgur.com/VcypK5c.png" alt="img" width={10} /> 
                     </div> 
                     <div className="vitamin">
-                        <h3>True Skin Vitamin C</h3>
+                        <h3>Camisa</h3>
                     </div>
                     <div className="size">
-                        <p>with Hyaluronic acid and Vitamin E</p>
-                        <h5>Size : 1 FL Oz</h5>
+                        <p>Vestimentas</p>
+                        <h5>Size : P</h5>
                     </div>
-                    <div className="buttons">
-                        <button >1 FL Oz<p>1 option from $23</p></button>
-                        <button >2 FL Oz<p>$43($21/FL Oz)</p></button>
-                    </div>
-                    <h4>Select Gender</h4>
                     <div className="gender">
                         <span>Masculino</span>
                         <span>Feminino</span>
@@ -62,5 +49,4 @@ export const ProfileCard=({to, text})=>{
     
         </>
         );
-        }
-    
+}
