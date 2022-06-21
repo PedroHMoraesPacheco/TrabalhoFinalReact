@@ -1,10 +1,10 @@
 .btn{
     background-color:  rgb(176, 92, 255);
     color:black;
-    padding: 0.5em 1em;
+    padding: 0.5em ;
     text-decoration: none;
     transition: 0.5s;
-    border-radius: 3%;
+    border-radius: 2.5%;
     height: 6.5%;
 }
 .btn:hover{
