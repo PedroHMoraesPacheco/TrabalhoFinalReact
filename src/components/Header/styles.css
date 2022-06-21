@@ -1,26 +1,34 @@
 .header {
+    display: flex;
+    justify-content:flex-end;
     color: black;
     background-color: black;
-    padding: 3em;
-    text-align: right;
+    padding: 1em;
+    text-align: center;
+    
 
+}
+.header > img{
+    width: 140px;
+    margin-right: 37.5%;
 }
 
 .header > h2 {
-    font-size: 25px;
+    font-size: 22.5px;
     background-color: black;
     color: rgb(176, 92, 255);
-    padding: 25px 5px 25px 25px;
+    padding: 60px 5px 25px 25px;
     text-align: left;
     display: inline;
+    
 
 }
 
 .header > h3 {
-    font-size: 25px;
+    font-size: 22.5px;
     background-color: black;
     color: rgb(176, 92, 255);
-    padding: 25px 5px 25px 25px;
+    padding: 60px 5px 25px 25px;
     text-align: left;
     display: inline;
 
