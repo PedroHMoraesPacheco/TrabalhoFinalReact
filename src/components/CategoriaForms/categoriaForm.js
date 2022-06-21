@@ -1,5 +1,6 @@
 import  './categoriaFormStyle.css'
 import Input from '../Form/input'
+import Button from '../../components/Button';
 
 export default function CategoriaForm () {
 
@@ -19,10 +20,13 @@ export default function CategoriaForm () {
                 name="name" 
                 placeholder="Insira a descrição da categoria"
             />
-            
-            <div>
-                <input type="submit" value="Cadastrar"/>
-            </div>
+                    <div className='div'>
+                          <Button to={'/categoria'} text='Cadastro'/>
+                    </div>       
+                    <div className='div'>
+                          <Button to={'/categoria'} text='Listagem'/>
+                    </div>               
+                    
         </form>
 
         </>
