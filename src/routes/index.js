@@ -8,6 +8,7 @@ import { Categoria } from '../pages/Categoria'
 import Footer from "../components/Footer/footer";
 import { Header } from "../components/Header";
 import { Produtos } from "../pages/Produtos";
+import { Vitrine } from "../pages/Vitrine";
 
 
 
@@ -21,6 +22,7 @@ export function AppRoutes() {
                 <Route path="/cadastro" element={<Cadastro />} />
                 <Route path="/categoria" element={<Categoria/>}/>
                 <Route path="/produto" element={<Produtos />} />
+                <Route path="/vitrine" element={<Vitrine />} />
             </Routes>
             <Footer />
         </BrowserRouter>
