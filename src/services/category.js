@@ -1,6 +1,6 @@
 import { api } from './http'
 
-const Create = (nome, descricao) => {
+const CadastroCategoria = (nome, descricao) => {
 
     return api.post (`categoria/cadastro`, {
         nome : nome,
@@ -9,5 +9,5 @@ const Create = (nome, descricao) => {
     })
 }
 export default {
-    Cadastro,
+    CadastroCategoria,
 }
