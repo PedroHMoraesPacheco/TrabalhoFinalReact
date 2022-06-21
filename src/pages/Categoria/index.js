@@ -8,7 +8,7 @@ export const Categoria= () => {
         <>
         <div className="novacategoria_container">
         <h1>Categorias</h1>
-        <p>Cadastre a Categoria</p>
+        <p>Cadastre a Categoria:</p>
         <CategoriaForm/>
         </div>
    

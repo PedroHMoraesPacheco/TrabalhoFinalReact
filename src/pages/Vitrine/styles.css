@@ -1,11 +1,12 @@
 *{
-    align-items: center;
+    align-items: left;
 }
 .cards{
   width: 100%;
-  display: flex;
+  display:flex;
+  flex-direction:column-reverse;
   align-items: center;
   justify-content: center;
+  gap: 1.5em;
   padding: 5em;
-  gap: 2em;
 }

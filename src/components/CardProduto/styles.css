@@ -2,15 +2,16 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:content-box;
     
 }
 
 .container{
     min-height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display:flex;
+    justify-content:center;
+    align-items: left;
+    flex-direction: column;
     
 }
 
