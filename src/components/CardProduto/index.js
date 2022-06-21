@@ -58,6 +58,7 @@ export const Card=({product})=>{
                 </div>
             </div>
             </div>     
+            
       
         </>
         );
