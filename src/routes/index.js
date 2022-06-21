@@ -9,6 +9,7 @@ import Footer from "../components/Footer/footer";
 import { Header } from "../components/Header";
 import { Produtos } from "../pages/Produtos";
 import { Vitrine } from "../pages/Vitrine";
+import { Cart } from "../pages/Carrinho";
 
 
 
@@ -23,6 +24,8 @@ export function AppRoutes() {
                 <Route path="/categoria" element={<Categoria/>}/>
                 <Route path="/produto" element={<Produtos />} />
                 <Route path="/vitrine" element={<Vitrine />} />
+                <Route path="/cart" element={<Cart />} />
+
             </Routes>
             <Footer />
         </BrowserRouter>

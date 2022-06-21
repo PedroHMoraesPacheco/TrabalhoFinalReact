@@ -1,10 +1,14 @@
 import React,{useState} from "react";
 import './styles.css';
 import ProductService from './../../services/products'
-
+import PedidoService from './../../services/Pedidos'
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify'
 
 export const Card=({product})=>{
-    const[addbag,setaddbag]=useState(1);
+
+    let navigate = useNavigate();
+    const[addbag,setaddbag]=useState(0);
     
     const AddBag=()=>{
     if(addbag<10){ setaddbag(addbag+1); } };
@@ -14,6 +18,10 @@ export const Card=({product})=>{
         }
 
     };
+
+    function Success(){
+        toast.success('Compra Efetuada')
+    }
  console.log(product)
     return(
         
@@ -30,7 +38,7 @@ export const Card=({product})=>{
                     </div>
                     <div className="money_bag">
                             <h3>R${product.preco}</h3>
-                            <button onClick={AddBag}><i className="fa fa-shopping-bag"></i>Adicionar ao Carrinho</button>
+                            <button onClick={Success}><i className="fa fa-shopping-bag"></i>Adicionar ao Carrinho</button>
                         </div>
                     <div className="size">
 

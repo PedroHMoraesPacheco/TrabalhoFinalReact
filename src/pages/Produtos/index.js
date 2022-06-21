@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify'
-import UploadFiles from '../../components/UploadFiles';
 
 import produtoService from '../../services/products'
 

@@ -14,7 +14,6 @@ export function Home() {
         <img src={eco} alt="img"/>
     </section>
     </>
-
   )
 }
 
