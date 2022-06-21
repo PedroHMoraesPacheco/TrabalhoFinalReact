@@ -31,9 +31,18 @@ const getFiles=(id)=>{
 }
 
 const GetProduct=()=>{
-  return api.get('produto')
+  return api.get(`produto`)
   
 }
+const GetImages=(id)=>{
+  return api.get(`produto/imagem/${id}`)
+  
+}
+const GetImagesUrl=(id)=>{
+  return api.get(`produto/imagem/${id}/1`)
+  
+}
+
 
 // const CreateNoImg=(nome, descricao, preco, quantidade_estoque, categoria)=>{
 
@@ -53,5 +62,7 @@ const GetProduct=()=>{
 
 export default {
     Create,
-    GetProduct
+    GetProduct,
+    GetImages,
+    GetImagesUrl
 }

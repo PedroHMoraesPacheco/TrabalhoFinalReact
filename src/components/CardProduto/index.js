@@ -18,7 +18,15 @@ export const Card=({product})=>{
         }
 
     };
-
+    function handleImage(product){
+        ProductService.GetImagesUrl(product.id).then(res => {
+          console.log(res);
+       
+        }).catch(err => {
+          toast.error('ERRO')
+          console.log(err);
+        })
+      }
     function Success(){
         toast.success('Compra Efetuada')
     }
