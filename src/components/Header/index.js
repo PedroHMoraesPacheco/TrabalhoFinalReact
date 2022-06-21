@@ -1,14 +1,12 @@
 import React from 'react'
 
-import logo from "../../assets/logo2.png";
-import { Container } from "./styles";
+//import logo from "../../assets/logo2.png";
+import './styles.css';
 
-export const Header = () => {
+export function Header() {
   return (
-        <Container>
         <div className="header">
-           {<img src={logo} alt="logo2.png" className="logo"/>}
+           <h1>ECOMMERCH</h1>
         </div>
-        </Container>
   )
 }
