@@ -10,20 +10,14 @@ export const Container = styled.div`
         align-content: center;
     
     .logo{
-        width: 500px;
-        padding: 25px 5px 25px 25px;
+        width: 700px;
+        padding: 0px;
+        margin-left: 300px;
 
     }
-
     .img{
         width: 150px;
         transform: rotate(10deg);
     }
- }
-
- .solmon-btn {
-    position: absolue;
-    top: 150px;
-    right: 0;
  }
 `;
