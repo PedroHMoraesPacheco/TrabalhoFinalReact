@@ -41,8 +41,6 @@ export const Card=({to, text})=>{
                             <p>{addbag}</p>
                             <i onClick={AddBag} className="fa fa-plus">+</i>
                         </div>
-                       
-    
                     </div>
                 </div>
             </div>
@@ -74,13 +72,11 @@ export const Card=({to, text})=>{
                             <p>{addbag}</p>
                             <i onClick={AddBag} className="fa fa-plus">+</i>
                         </div>
-                       
-    
                     </div>
                 </div>
             </div>
-    
             </div>
+
             <div className="all">
             <div className="container">
                 <div className="card">
@@ -107,15 +103,43 @@ export const Card=({to, text})=>{
                             <p>{addbag}</p>
                             <i onClick={AddBag} className="fa fa-plus">+</i>
                         </div>
-                       
-    
                     </div>
                 </div>
             </div>
-    
             </div>
             
-            
+              <div className="all">
+            <div className="container">
+                <div className="card">
+                    <div className="image">
+                        <img src="https://cdn.shopify.com/s/files/1/0042/7298/0040/products/TS057-01.jpg?v=1647894943&width=493" alt="img" width={150} /> 
+                    </div> 
+                    <div className="vitamin">
+                        <h2>Camisa Mini Script Improve</h2>
+                    </div>
+                    <div className="money_bag">
+                            <h3>R$100,50</h3>
+                            <button onClick={AddBag}><i className="fa fa-shopping-bag"></i>Adicionar ao Carrinho</button>
+                        </div>
+                    <div className="size">
+
+                        <h5>Sizes:    <span> P/G/XGG</span></h5>
+                    </div>
+                    <div className="gender">
+                        <span>Masculino</span>
+                        <span>Feminino</span>
+
+                    </div>
+                    <div className="last_buttons">
+                        <div className="qty_btn">
+                            <i onClick={DecBag} className="fa fa-minus">-</i>
+                            <p>{addbag}</p>
+                            <i onClick={AddBag} className="fa fa-plus">+</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
         </>
   
 
