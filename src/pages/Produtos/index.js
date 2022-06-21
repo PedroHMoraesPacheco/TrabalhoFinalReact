@@ -16,34 +16,45 @@ export function Produtos() {
   const [file, setFile] = useState();
 
 
+  function handleFile(e){
+    let file = e.target.file[0]
 
-  //function handleCadastro() {
+    this.setFile({file:file})
+  }
 
-  //   produtoService.Create(nome, descricao, preco, quantidade_estoque,categoria,file).then(res => {
-  //     uploadImages().then(event =>{
-  //       this.setState({
-  //         selectedFile: event.target.files[0]
-  //         })
-  //       })
-  //     console.log(res);
-  //     toast.success('produto criado')
-  //     navigate("/home")
+  function handleUpload(e){
+    console.log(this.state);
+
+    let file = this.state.file;
+    let formData=new FormData();
+    formData.append('image', file)
+    
+  }
+
+  function handleCadastro() {
+
+    produtoService.Create(file,nome, descricao, preco, quantidade_estoque,categoria).then(res => {
+      console.log(res);
+      console.log(file);
+      toast.success('produto criado')
+      navigate("/home")
+    }).catch(err => {
+      toast.error('ERRO')
+      console.log(err);
+    })
+  }
+
+  // function handleCadastro(){
+  //   produtoService.CreateNoImg(nome, descricao, preco, quantidade_estoque,categoria).then(res => {
+  //          console.log(res);
+  //          toast.success('produto criado')
+  //          navigate("/home")
   //   }).catch(err => {
-  //     toast.error('ERRO')
-  //     console.log(err);
-  //   })
+  //          toast.error('ERRO')
+  //          console.log(err);
+  //       })
   // }
 
-  function handleCadastro(){
-    produtoService.CreateNoImg(nome, descricao, preco, quantidade_estoque,categoria).then(res => {
-           console.log(res);
-           toast.success('produto criado')
-           navigate("/home")
-    }).catch(err => {
-           toast.error('ERRO')
-           console.log(err);
-        })
-  }
   return (
     <div style={{ display: 'flex', height: '100vh', backgroundColor: '#FFF', alignItems: 'center', justifyContent: 'center' }}>
       <div style={{ display: 'flex', backgroundColor: '#FF4040', width: 500, padding: 50, flexDirection: 'column', justifyContent: 'center' }}>
@@ -53,7 +64,7 @@ export function Produtos() {
         <input style={{ marginBottom: 20, padding: 15 }} placeholder='Preço' required type={'preco'} value={preco} onChange={e => setPreco(e.target.value)} />
         <input style={{ marginBottom: 20, padding: 15 }} placeholder='Estoque' required type={'quantidade_estoque'} value={quantidade_estoque} onChange={e => setQuantidade_estoque(e.target.value)} />
         <input style={{ marginBottom: 20, padding: 15 }} placeholder='Categoria' required type={'categoria'} value={categoria} onChange={e => setCategoria(e.target.value)} />
-        {/* <input style={{ marginBottom: 20, padding: 15 }} placeholder='File' required type={"file"} value={file} onChange={e => setFile(e.target.value)} /> */}
+        <input style={{ marginBottom: 20, padding: 15 }} placeholder='File' required type={'file'} value={file} onChange={e => setFile(e.target.value[0])} />
         <button style={{ marginBottom: 20, padding: 15 }} onClick={handleCadastro}>
           Cadastrar
         </button>
