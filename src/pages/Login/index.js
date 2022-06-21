@@ -31,10 +31,10 @@ export function Login() {
         <button style={{ marginBottom: 20, padding: 15 }} onClick={handleLogin}>
           Entrar
         </button>
-        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+        {/* <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
           <p style={{ color: '#FFF', cursor: 'pointer' }} >Alterar senha</p>
           <p style={{ color: '#FFF', cursor: 'pointer' }} >Cadastre-se</p>
-        </div>
+        </div> */}
       </div>
     </div>
   )
