@@ -9,11 +9,3 @@
   gap: 1.5em;
   padding: 4.5em;
 }
-
-.grid-container {
-  padding: 10px;
-  align-items: center;
-  display: grid;
-  grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
-  grid-gap: 2px;
-}

@@ -17,7 +17,7 @@ export function Vitrine(){
    
     return(
     
-        <div className="grid-container" style={{}}>
+        <div className="cards">
         {products.map(product=>(
       <Card product={product}/>
       
