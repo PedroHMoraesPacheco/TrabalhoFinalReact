@@ -56,16 +56,16 @@ export function Produtos() {
   // }
 
   return (
-    <div style={{ display: 'flex', height: '100vh', backgroundColor: '#FFF', alignItems: 'center', justifyContent: 'center' }}>
-      <div style={{ display: 'flex', backgroundColor: '#FF4040', width: 500, padding: 50, flexDirection: 'column', justifyContent: 'center' }}>
-        <h1 style={{ marginBottom: 20, textAlign: 'center', color: '#FFF' }}>Cadastro de Produtos</h1>
-        <input style={{ marginBottom: 20, padding: 15 }} placeholder='Nome' required type={'nome'} value={nome} onChange={e => setNome(e.target.value)} />
-        <input style={{ marginBottom: 20, padding: 15 }} placeholder='Descrição' required type={'descrição'} value={descricao} onChange={e => setDescricao(e.target.value)} />
-        <input style={{ marginBottom: 20, padding: 15 }} placeholder='Preço' required type={'preco'} value={preco} onChange={e => setPreco(e.target.value)} />
-        <input style={{ marginBottom: 20, padding: 15 }} placeholder='Estoque' required type={'quantidade_estoque'} value={quantidade_estoque} onChange={e => setQuantidade_estoque(e.target.value)} />
-        <input style={{ marginBottom: 20, padding: 15 }} placeholder='Categoria' required type={'categoria'} value={categoria} onChange={e => setCategoria(e.target.value)} />
-        <input style={{ marginBottom: 20, padding: 15 }} placeholder='File' required type={'file'} value={file} onChange={e => setFile(e.target.value[0])} />
-        <button style={{ marginBottom: 20, padding: 15 }} onClick={handleCadastro}>
+    <div style={{ display: 'flex', height: '120vh', backgroundColor: '#FFF', alignItems: 'center', justifyContent: 'center' }}>
+    <div style={{ display: 'flex', backgroundColor: 'black', width: 500, padding: 50, flexDirection: 'column', justifyContent: 'center' }}>
+        <h1 style={{ marginBottom: 20, textAlign: 'center', color: 'blueviolet' }}>Cadastro de Produtos</h1>
+        <input style={{ marginBottom: 15, padding: 15 }} placeholder='Nome' required type={'nome'} value={nome} onChange={e => setNome(e.target.value)} />
+        <input style={{ marginBottom: 15, padding: 15 }} placeholder='Descrição' required type={'descrição'} value={descricao} onChange={e => setDescricao(e.target.value)} />
+        <input style={{ marginBottom: 15, padding: 15 }} placeholder='Preço' required type={'preco'} value={preco} onChange={e => setPreco(e.target.value)} />
+        <input style={{ marginBottom: 15, padding: 15 }} placeholder='Estoque' required type={'quantidade_estoque'} value={quantidade_estoque} onChange={e => setQuantidade_estoque(e.target.value)} />
+        <input style={{ marginBottom: 15, padding: 15 }} placeholder='Categoria' required type={'categoria'} value={categoria} onChange={e => setCategoria(e.target.value)} />
+        <input style={{ marginBottom: 15, padding: 15 }} placeholder='File' required type={'file'} value={file} onChange={e => setFile(e.target.value[0])} />
+        <button style={{ marginBottom: 15, padding: 15 }} onClick={handleCadastro}>
           Cadastrar
         </button>
       </div>
