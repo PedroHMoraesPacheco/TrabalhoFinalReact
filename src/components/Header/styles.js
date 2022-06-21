@@ -10,9 +10,9 @@ export const Container = styled.div`
         align-content: center;
     
     .logo{
-        width: 300px;
+        width: 500px;
         padding: 25px 5px 25px 25px;
-        cursor: pointer;
+
     }
 
     .img{
