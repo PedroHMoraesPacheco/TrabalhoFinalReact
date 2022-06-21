@@ -4,6 +4,7 @@ import eco from './img.png';
 import './styles.css';
 
 import ProductService from './../../services/products'
+import { Card } from '../../components/CardProduto';
 
 export function Home() {
   const [products,setProducts]=useState([{}])
