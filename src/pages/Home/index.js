@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useEffect,useState } from 'react';
 import Button from '../../components/Button';
 import eco from './img.png';
 import './styles.css';
-import './../../components/CardProduto/index'
 
-export function Home() { 
+import ProductService from './../../services/products'
+
+export function Home() {
+  const [products,setProducts]=useState([{}])
+  useEffect(()=>{
+    ProductService.GetProduct().then(res=>{
+      setProducts(res.data)
+    }).catch(e=>{
+      console.log(e)
+    })
+  },[])
   return (
     <>
    <section className="home_container">
@@ -14,6 +23,9 @@ export function Home() {
         <Button to={'/categoria'} text='Escolha a Categoria dos Produtos' /><br></br>
         <img src={eco} alt="img"/>
     </section>
+    {products.map(product=>(
+      <Card product={product}/>
+    ))}
     </>
 
   )

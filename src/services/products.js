@@ -27,9 +27,13 @@ import { api } from './http';
     });
 }
 const getFiles=(id)=>{
-        return api.get("/produto/imagem/{id}");
+        return api.get(`/produto/imagem/{id}`);
 }
 
+const GetProduct=()=>{
+  return api.get('produto')
+  
+}
 
 // const CreateNoImg=(nome, descricao, preco, quantidade_estoque, categoria)=>{
 
@@ -48,5 +52,6 @@ const getFiles=(id)=>{
 // }
 
 export default {
-    Create
+    Create,
+    GetProduct
 }

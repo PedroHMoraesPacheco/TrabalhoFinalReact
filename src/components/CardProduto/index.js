@@ -1,8 +1,9 @@
-import React from "react";
+import React,{useState} from "react";
 import './styles.css';
+import ProductService from './../../services/products'
 
-export const Card=({to, text})=>{
-    const{useState}=React;
+
+export const Card=({product})=>{
     const[addbag,setaddbag]=useState(1);
     
     const AddBag=()=>{
@@ -13,6 +14,7 @@ export const Card=({to, text})=>{
         }
 
     };
+ console.log(product)
     return(
         
         <>
@@ -24,10 +26,10 @@ export const Card=({to, text})=>{
                         <img src="https://ae01.alicdn.com/kf/Saa2c52ecde8e48968ec05ace8ba6fad23/Jaqueta-de-estilo-universit-rio-chama-peluda-retalhos-couro-do-plut-nio-jaqueta-masculina-inverno-streetwear.jpg_Q90.jpg_.webp" alt="img" width={150} /> 
                     </div> 
                     <div className="vitamin">
-                        <h2>Jaqueta Aesthetic Universitário</h2>
+                        <h2>{product.nome}</h2>
                     </div>
                     <div className="money_bag">
-                            <h3>R$165,00</h3>
+                            <h3>R${product.preco}</h3>
                             <button onClick={AddBag}><i className="fa fa-shopping-bag"></i>Adicionar ao Carrinho</button>
                         </div>
                     <div className="size">
@@ -47,6 +49,7 @@ export const Card=({to, text})=>{
                     </div>
                 </div>
             </div>
+<<<<<<< Updated upstream
     
             </div>
             <div className="all">
@@ -142,6 +145,8 @@ export const Card=({to, text})=>{
                     </div>
                 </div>
             </div>
+=======
+>>>>>>> Stashed changes
             </div>
 
             <div className="all">
@@ -243,8 +248,5 @@ export const Card=({to, text})=>{
 
             
         </>
-  
-
-        
         );
 }
